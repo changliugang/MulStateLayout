@@ -1,4 +1,7 @@
 # MulStateLayout
+
+[![](https://jitpack.io/v/changliugang/MulStateLayout.svg)](https://jitpack.io/#changliugang/MulStateLayout)
+
 多状态布局切换封装，简化项目加载中，无数据，正常内容，请求失败，网络异常等状态的切换
 
 本lib是在[伪文艺大叔][1]的[StatusLayout][2]基础上根据自己的需求简化修改的，并丰富了注释以方便阅读，特此感谢。奉上前辈项目的[本体博文][3]
