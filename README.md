@@ -34,6 +34,15 @@ emptyDataTextTipId | 设置无数据布局提示文字
 errorIconImageId | 设置请求出错布局图标
 errorTextTipId | 设置请求出错布局提示文字
 
+## 常用函数
+函数名 | 描述
+----- | -----
+showContent | 显示正常内容布局
+showEmpty | 显示无数据布局
+showLoading | 显示加载中布局
+showError | 显示错误布局
+showNetWorkError | 显示网络异常布局
+
 ## 这里有几点需要注意：
 * 在onCreate设置setContentView(R.layout.activity_normal)会覆盖我们的多状态布局，所以必须要在MulStateLayoutHelper的contentLayoutResId函数中设  置正常内容布局。
 * 添加点击重试功能，需要指定RetryView的Id，并实现OnRetryListener监听。RetryView的Id需要是对应布局里的控件，否则，你懂的。
