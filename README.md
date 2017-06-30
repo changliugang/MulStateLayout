@@ -5,7 +5,23 @@
 
 先上图
  ![演示](https://github.com/changliugang/MulStateLayout/raw/master/art/show.gif)  
-
+ 
+## 引入依赖
+1. 在项目跟目录下build.gradle中如下添加。
+```
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+2. 在app下的build.gradle如下添加依赖。
+```
+dependencies {
+	        compile 'com.github.changliugang:MulStateLayout:v1.0.0'
+}
+```
 ## 核心类
 
 类名 | 描述
