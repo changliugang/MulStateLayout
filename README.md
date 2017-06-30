@@ -3,8 +3,7 @@
 
 本lib是在[伪文艺大叔][1]的[StatusLayout][2]基础上根据自己的需求简化修改的，并丰富了注释以方便阅读，特此感谢。奉上前辈项目的[本体博文][3]
 
-先上图
- ![演示](https://github.com/changliugang/MulStateLayout/raw/master/art/show.gif)  
+![演示](https://github.com/changliugang/MulStateLayout/raw/master/art/show.gif)  
  
 ## 引入依赖
 1. 在项目跟目录下build.gradle中如下添加。
