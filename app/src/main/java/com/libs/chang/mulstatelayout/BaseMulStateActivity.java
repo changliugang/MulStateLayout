@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.libs.chang.mulstatelayoutlib.MulStateLayoutHelper;
 import com.libs.chang.mulstatelayoutlib.listener.OnStateViewShowListener;
@@ -65,7 +64,6 @@ public class BaseMulStateActivity extends AppCompatActivity {
                                 break;
                         }
                         Log.d("chang", text + "突然出现");
-                        Toast.makeText(BaseMulStateActivity.this, text + "突然出现", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
@@ -89,7 +87,6 @@ public class BaseMulStateActivity extends AppCompatActivity {
                                 break;
                         }
                         Log.d("chang", text + "突然消失");
-                        Toast.makeText(BaseMulStateActivity.this, text + "突然消失", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .build();

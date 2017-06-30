@@ -15,7 +15,6 @@ public class NormalActivity extends BaseMulStateActivity {
 //        setContentView(R.layout.activity_normal);
         // 注意这里，我们需要在 MulStateLayoutHelper的 contentLayoutResId 函数中设置正常内容布局（like line 29），
         // 这里设置setContentView(R.layout.activity_normal)会覆盖我们的多状态布局
-        mMulStateLayoutHelper.showLoading();
     }
 
     @Override
