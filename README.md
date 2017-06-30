@@ -1,7 +1,7 @@
 # MulStateLayout
 多状态布局切换封装，简化项目加载中，无数据，正常内容，请求失败，网络异常等状态的切换
 
-本lib是在[伪文艺大叔][1][StatusLayout][2]基础上根据自己的需求简化修改的，并丰富了注释以方便阅读，特此感谢。[本体博文][3]
+本lib是在[伪文艺大叔][1]的[StatusLayout][2]基础上根据自己的需求简化修改的，并丰富了注释以方便阅读，特此感谢。奉上前辈项目的[本体博文][3]
 
 ## 核心类
 
@@ -30,6 +30,12 @@ emptyDataIconImageId | 设置无数据布局图标
 emptyDataTextTipId | 设置无数据布局提示文字
 errorIconImageId | 设置请求出错布局图标
 errorTextTipId | 设置请求出错布局提示文字
+
+这里有几点需要注意：
+* 在onCreate设置setContentView(R.layout.activity_normal)会覆盖我们的多状态布局，所以必须要在MulStateLayoutHelper的contentLayoutResId函数中设  置正常内容布局。
+* 添加点击重试功能，需要指定RetryView的Id，并实现OnRetryListener监听。RetryView的Id需要是对应布局里的控件，否则，你懂的。
+* 修改图标和提示文字需要在MulStateLayoutHelper设置对应的资源id，之后代码中调用showXXX才行。
+
 
 [1]:http://www.jianshu.com/u/030d732a71d2 "伪文艺大叔"
 [2]:https://github.com/chenpengfei88/StatusLayout "StatusLayout"
