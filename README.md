@@ -1,6 +1,7 @@
 # MulStateLayout
 
 [![](https://jitpack.io/v/changliugang/MulStateLayout.svg)](https://jitpack.io/#changliugang/MulStateLayout)
+[![API](https://img.shields.io/badge/API-18%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=18)
 
 多状态布局切换封装，简化项目加载中，无数据，正常内容，请求失败，网络异常等状态的切换
 
