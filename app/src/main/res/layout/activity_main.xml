@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libs.chang.mulstatelayout.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_normal_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通模式"/>
+
+        <Button
+            android:id="@+id/main_retry_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加重试模式"/>
+
+        <Button
+            android:id="@+id/main_custom_view_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义视图模式"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
