@@ -32,7 +32,7 @@ dependencies {
 CoreFrameLayout | 核心布局，多种状态布局包含于其中
 MulStateLayoutHelper | 帮助类，控制状态切换，直接使用的类
 OnStateViewShowListener | 状态布局显示隐藏的监听器
-OnRetryListener | 点击重试按钮的监听器
+OnRetryListener | 点击重试按钮的监听器，有返回点击View的ID，可以区分是在哪个状态点击的
 
 ## MulStateLayoutHelper常用配置
 
@@ -52,6 +52,8 @@ emptyDataIconImageId | 设置无数据布局图标
 emptyDataTextTipId | 设置无数据布局提示文字
 errorIconImageId | 设置请求出错布局图标
 errorTextTipId | 设置请求出错布局提示文字
+getViewByStateId | 根据状态ID获取对应布局
+getCurState | 获取当前状态
 
 ## 常用函数
 函数名 | 描述
@@ -61,6 +63,8 @@ showEmpty | 显示无数据布局
 showLoading | 显示加载中布局
 showError | 显示错误布局
 showNetWorkError | 显示网络异常布局
+getViewByStateId | 根据状态ID获取对应布局
+getCurState | 获取当前状态
 
 ## 这里有几点需要注意：
 * 在onCreate设置setContentView(R.layout.activity_normal)会覆盖我们的多状态布局，所以必须要在MulStateLayoutHelper的contentLayoutResId函数中设  置正常内容布局。
