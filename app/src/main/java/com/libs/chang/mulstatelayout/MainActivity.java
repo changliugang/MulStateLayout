@@ -16,10 +16,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button normalBtn = (Button) findViewById(R.id.main_normal_btn);
         Button retryBtn = (Button) findViewById(R.id.main_retry_btn);
         Button customBtn = (Button) findViewById(R.id.main_custom_view_btn);
+        Button fragmentBtn = (Button) findViewById(R.id.main_fragment_btn);
 
         normalBtn.setOnClickListener(this);
         retryBtn.setOnClickListener(this);
         customBtn.setOnClickListener(this);
+        fragmentBtn.setOnClickListener(this);
     }
 
 
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.main_retry_btn:
                 startActivity(new Intent(MainActivity.this, StateWithRetryActivity.class));
+                break;
+            case R.id.main_fragment_btn:
+                startActivity(new Intent(MainActivity.this, PageWithFragmentActivity.class));
                 break;
         }
     }

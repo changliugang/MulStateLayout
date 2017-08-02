@@ -37,7 +37,7 @@ public class StateWithRetryActivity extends BaseMulStateActivity {
                 .netWorkErrorRetryViewId(R.id.net_error_retry_btn)
                 .onRetryListener(new OnRetryListener() {
                     @Override
-                    public void onRetryClick() {
+                    public void onRetryClick(int id) {
                         mMulStateLayoutHelper.showLoading();
                         new Thread(new Runnable() {
                             @Override

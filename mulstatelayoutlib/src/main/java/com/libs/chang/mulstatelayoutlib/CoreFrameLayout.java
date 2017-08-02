@@ -64,6 +64,7 @@ public class CoreFrameLayout extends FrameLayout {
         mMulStateLayoutHelper = mulStateLayoutHelper;
         addAllLayoutToRoot();
     }
+    private int curState;// 当前状态
 
     /**
      * 添加所有状态布局
@@ -206,6 +207,24 @@ public class CoreFrameLayout extends FrameLayout {
     }
 
     /**
+     * 根据状态布局ID查找布局
+     *
+     * @param id 当前状态布局ID
+     * @return 当前状态布局
+     */
+    public View getViewByStateId(int id) {
+        return mViewSparseArray.get(id);
+    }
+
+    /**
+     * 获取当前显示界面的状态值
+     * @return 当前状态布局ID
+     */
+    public int getCurState(){
+        return curState;
+    }
+
+    /**
      * 根据状态布局ID显示状态布局
      *
      * @param id 当前状态布局ID
@@ -215,6 +234,7 @@ public class CoreFrameLayout extends FrameLayout {
             int keyId = mViewSparseArray.keyAt(i);
             View valueView = mViewSparseArray.valueAt(i);
             if (keyId == id) {
+                curState = keyId;
                 valueView.setVisibility(VISIBLE);
                 if (mMulStateLayoutHelper.mOnStateViewShowListener != null)
                     mMulStateLayoutHelper.mOnStateViewShowListener.onViewShow(valueView, keyId);
@@ -286,13 +306,13 @@ public class CoreFrameLayout extends FrameLayout {
      * @param view 当前状态布局
      * @param id   当前状态布局资源ID
      */
-    private void onRetryClick(View view, int id) {
+    private void onRetryClick(View view, final int id) {
         View retryView = view.findViewById(id);
         if (retryView == null || mMulStateLayoutHelper.mOnRetryListener == null) return;
         retryView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                mMulStateLayoutHelper.mOnRetryListener.onRetryClick();
+                mMulStateLayoutHelper.mOnRetryListener.onRetryClick(id);
             }
         });
     }

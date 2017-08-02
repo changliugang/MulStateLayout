@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
 
@@ -111,6 +112,24 @@ public class MulStateLayoutHelper {
 
     public CoreFrameLayout getCoreFrameLayout() {
         return mCoreFrameLayout;
+    }
+
+    /**
+     * 根据状态布局ID查找布局
+     *
+     * @param id 当前状态布局ID
+     * @retur
+     */
+    public View getViewByStateId(int id) {
+        return mCoreFrameLayout.getViewByStateId(id);
+    }
+
+    /**
+     * 获取当前显示界面的状态值
+     * @return 当前状态布局ID
+     */
+    public int getCurState(){
+        return mCoreFrameLayout.getCurState();
     }
 
     /**

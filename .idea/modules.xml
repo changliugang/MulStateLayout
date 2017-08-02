@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MulStateLayout.iml" filepath="$PROJECT_DIR$/MulStateLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MulStateLayout.iml" filepath="$PROJECT_DIR$/MulStateLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mulstatelayoutlib/mulstatelayoutlib.iml" filepath="$PROJECT_DIR$/mulstatelayoutlib/mulstatelayoutlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/mulstatelayoutlib/mulstatelayoutlib.iml" filepath="$PROJECT_DIR$/mulstatelayoutlib/mulstatelayoutlib.iml" />
     </modules>
   </component>

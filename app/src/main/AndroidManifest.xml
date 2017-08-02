@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".CustomViewActivity">
         </activity>
+        <activity android:name=".PageWithFragmentActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

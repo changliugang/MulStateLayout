@@ -1,5 +1,7 @@
 package com.libs.chang.mulstatelayoutlib.listener;
 
+import android.support.annotation.IdRes;
+
 /**
  * 点击重试监听器
  *
@@ -9,7 +11,8 @@ public interface OnRetryListener {
 
     /**
      * 点击重试按钮回调
+     * @param id 重试按钮资源id
      */
-    void onRetryClick();
+    void onRetryClick(@IdRes final int id);
 
 }
